@@ -1,0 +1,108 @@
+body {
+  font-size: 12px;
+  color: #666;
+}
+
+
+/* Flexslider */
+
+.flexslider {
+  margin: auto;
+  padding: 0;
+  width: 1024px;
+  position: relative;
+}
+
+.slides,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flexslider .slides > li {
+  position: relative;
+  display: none;
+}
+
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+
+/* Direction Nav */
+
+.flex-direction-nav a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-color: #555;
+  top: 20px;
+  right: 20px;
+  float: none;
+  position: absolute;
+  cursor: pointer;
+  text-indent: -9999px;
+  background-color: #222;
+  background: rgba(0, 0, 0, 0.65);
+  *bottom: 50px;
+  transition: all 0.1s ease-in-out;
+}
+
+.flex-direction-nav .flex-next {
+  background-image: url(../img/slider-control-right.png);
+  background-repeat: no-repeat;
+  background-position: 52% 50%;
+}
+
+.flex-direction-nav .flex-prev {
+  margin-right: 36px;
+  background-image: url(../img/slider-control-left.png);
+  background-repeat: no-repeat;
+  background-position: 48% 50%;
+}
+
+.flex-direction-nav .flex-prev:hover,
+.flex-direction-nav .flex-next:hover {
+  background-color: darkgrey;
+  opacity: 1;
+}
+
+
+/* Caption */
+
+.slide-caption {
+  width: auto;
+  max-width: 30%;
+  padding: 10px 20px;
+  margin: 0 0 0px 0px;
+  position: absolute;
+  display: block;
+  left: 20px;
+  bottom: 20px;
+  background-color: #222;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.slide-caption.n {
+  background-color: #222;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.slide-caption h3 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  line-height: 33px;
+}
+
+.slide-caption p {
+  margin: 0;
+  line-height: 19px;
+  color: #bbb;
+}
